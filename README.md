@@ -7,7 +7,7 @@ function pass(input, iter_n, out_len) {
       var t = (a.length - i + m + p[i % p.length]) % a.length;
       m = a[i] = a.splice(t, 1, a[i])[0];
     });
-	var iter = (a, p, n) => [...Array(n).keys()].forEach(i => swap(a, p, 1));
+    var iter = (a, p, n) => [...Array(n).keys()].forEach(i => swap(a, p, 1));
     var nono = ['\'', '"', '`', '<', '>', '&', '/', '\\'];
     var idxs = [...Array(85).keys()];
     var dict = [...Array(idxs.length + nono.length).keys()]
