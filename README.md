@@ -16,7 +16,7 @@ function pass(input, iter_n, out_len) {
       .join('');
     var patt = input.split('').map(c => dict.indexOf(c));
     iter(idxs, patt, iter_n);
-	return [...Array(out_len).keys()].map(i => {
+    return [...Array(out_len).keys()].map(i => {
       iter(idxs, patt, 1);
       return dict[idxs[i]];
     }).join('');
