@@ -22,6 +22,6 @@ function pass(input, iter_n, out_len) {
     }).join('');
 }
 if (pass('omgMONKEY!0', 666, 16) !== 'W|i-Z-IUOK{BOd($') alert('self test failed!');
-prompt('!', pass(prompt('?'), 666, Number(prompt('len', 16))));
+else prompt('!', pass(prompt('?'), 666, Number(prompt('len', 16))));
 })()
 ```
